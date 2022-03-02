@@ -1,0 +1,56 @@
+<div class="container">
+    <h3 class="text-center m-4">Angular Authentication </h3>
+    <div class="row mt-4 pt-4">
+
+        <div class="login_form_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- login_wrapper -->
+                        <div class="login_wrapper">
+                            <div *ngIf="errorMessage">
+                                <p class="text-danger text-center">{{errorMessage}}</p>
+                            </div>
+                            <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                                        <a style="cursor: pointer;" class="btn btn-primary facebook" (click)="facebookLogin()">
+                                            <span>Login with Facebook</span>
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                                        <a href="#" class="btn btn-primary google-plus" #loginRef>
+                                            Login with Google
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h2>or</h2>
+                                <div class="formsix-pos">
+                                    <div class="form-group i-email">
+                                        <input type="email" class="form-control" required="" id="email2"
+                                            placeholder="Email Address *" formControlName="email">
+                                            <small class="text-danger" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">Email is invalid</small>
+                                    </div>
+                                </div>
+                                <div class="formsix-e">
+                                    <div class="form-group i-password">
+                                        <input type="password" class="form-control" required="" id="password2"
+                                            placeholder="Password *" formControlName="password">
+                                            <small class="text-danger" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">Email is invalid</small>
+                                    </div>
+                                </div>
+                                <div class="login_btn_wrapper">
+                                    <button type="submit" [disabled]="this.loginForm.invalid" class="btn btn-primary login_btn"> Login </button>
+                                </div>
+                            </form>
+                        </div> <!-- /.login_wrapper-->
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

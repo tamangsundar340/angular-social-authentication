@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="contianer p-4">
+    <h4 class="text-center">Welcome to Dashboard</h4>
+
+    <div class="" *ngIf="profile">
+        <h6 class="text-center">Your email id is = {{profile.email}}</h6>
+        <br>
+    </div>
+    <div *ngIf="socialProfile">
+        <h6 class="text-center">Name : {{socialProfile.tf}}</h6> 
+        <h6 class="text-center">Email : {{socialProfile.tv}}</h6> 
+        <img [src]="socialProfile.eN" alt="">
+    </div>
+    <div *ngIf="faebookProfile">
+        <h6 class="text-center">Name : {{faebookProfile.name}}</h6> 
+        <img [src]="faebookProfile.picture.data.url" alt="">
+    </div>
+</div>
