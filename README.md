@@ -3,6 +3,8 @@
 
 ![Screenshot 2022-03-02 100131](https://user-images.githubusercontent.com/88138560/156294259-7a3980e2-d9ae-4963-b68b-5dd53b6cc6d0.png)
 
+# Angular charts
+![Screenshot 2022-03-02 160101](https://user-images.githubusercontent.com/88138560/156342619-4ad623c8-75e7-485c-88a7-24861d92c771.png)
 
 
 # AngularSocialAuthentication
