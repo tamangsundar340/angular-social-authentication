@@ -8,6 +8,18 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ChartsComponent } from './components/charts/charts.component';
+// import { ChartjsModule } from '@ctrl/ngx-chartjs';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { LinechartsComponent } from './components/linecharts/linecharts.component';
+import { PiechartsComponent } from './components/piecharts/piecharts.component';
+import { BubblechartComponent } from './components/bubblechart/bubblechart.component';
+import { GuagechartsComponent } from './components/guagecharts/guagecharts.component';
+import { HeatmapComponent } from './components/heatmap/heatmap.component';
+import { NumbercardComponent } from './components/numbercard/numbercard.component';
+import { TreechartComponent } from './components/treechart/treechart.component';
+import { PolarchartComponent } from './components/polarchart/polarchart.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +27,23 @@ import { ChartsComponent } from './components/charts/charts.component';
     HomeComponent,
     DashboardComponent,
     HeaderComponent,
-    ChartsComponent
+    ChartsComponent,
+    LinechartsComponent,
+    PiechartsComponent,
+    BubblechartComponent,
+    GuagechartsComponent,
+    HeatmapComponent,
+    NumbercardComponent,
+    TreechartComponent,
+    PolarchartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // import charts
+    NgxChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

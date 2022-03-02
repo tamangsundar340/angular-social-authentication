@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="container p-5">
+    <h6 class="text-center">Line chart</h6>
+    <br>
+    <ngx-charts-line-chart [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations">
+    </ngx-charts-line-chart>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Area chart</h6>
+    <br>
+    <ngx-charts-area-chart [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations">
+    </ngx-charts-area-chart>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Stacked area chart</h6>
+    <br>
+    <ngx-charts-area-chart-stacked [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations">
+    </ngx-charts-area-chart-stacked>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Normalized stacked area chart</h6>
+    <br>
+    <ngx-charts-area-chart-normalized [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations">
+    </ngx-charts-area-chart-normalized>
+</div>

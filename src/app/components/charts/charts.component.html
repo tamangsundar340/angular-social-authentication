@@ -1,4 +1,79 @@
 <app-header></app-header>
 <div class="container p-4">
-    <p>charts works!</p>
+    <h6 class="text-center">Vertical bar chart</h6>
+    <br>
+    <ngx-charts-bar-vertical [results]="productSales" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding" [roundEdges]="roundEdges">
+    </ngx-charts-bar-vertical>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Horizental bar chart</h6>
+    <br>
+    <!-- to make horizenal bar graph just change xAxisLabel to yAxisLabel and vice varcs -->
+    <ngx-charts-bar-horizontal [results]="productSales" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+        [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+        [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+        [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding" [roundEdges]="roundEdges">
+    </ngx-charts-bar-horizontal>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Vertical Stacked bar chart</h6>
+    <br>
+    <ngx-charts-bar-vertical-stacked [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+    [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+    [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+    [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding">
+    </ngx-charts-bar-vertical-stacked>
+    <br>
+    <h6 class="text-center">Horizental Stacked bar chart</h6>
+    <br>
+    <ngx-charts-bar-horizontal-stacked [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+    [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+    [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+    [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding">
+    </ngx-charts-bar-horizontal-stacked>
+    <br>
+    <hr>
+    <br>
+    <h6 class="text-center">Vertical Normalzied  Stacked bar chart</h6>
+    <br>
+    <ngx-charts-bar-vertical-normalized [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+    [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+    [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+    [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding">
+    </ngx-charts-bar-vertical-normalized>
+    <br>
+    <h6 class="text-center">Horizental Stacked bar chart</h6>
+    <br>
+    <ngx-charts-bar-horizontal-normalized [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+    [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+    [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+    [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding">
+    </ngx-charts-bar-horizontal-normalized>
+    <br>
+    <hr>
+    <h6 class="text-center">2d bar chart</h6>
+    <br>
+    <ngx-charts-bar-vertical-2d [results]="productSalesMulti" [view]="view" [scheme]="colorScheme" [xAxis]="xAxis"
+    [yAxis]="yAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="yAxisLabel"
+    [yAxisLabel]="xAxisLabel" [legend]="legend" [legendTitle]="legendTitle" [legendPosition]="legendPosition"
+    [animations]="animations" [showGridLines]="showGridLines" [barPadding]="barPadding">
+    </ngx-charts-bar-vertical-2d>
+    <br>
 </div>
+
+
+<!-- <ngx-charts-bar-vertical [results]="productSales" [view]="view" [scheme]="colorScheme" [schemeType]="schemeType"
+    [gradient]="gradient" [xAxis]="xAxis" [yAxis]="yAxis" [legend]="legend" [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="xAxisLabel" [legendTitle]="legendTitle"
+    [legendPosition]="legendPosition" [animations]="animations" [showGridLines]="showGridLines"
+    [trimXAxisTicks]="trimXAxisTicks" [trimYAxisTicks]="trimYAxisTicks" [rotateXAxisTicks]="rotateXAxisTicks"
+    [maxXAxisTickLength]="maxXAxisTickLength" [maxYAxisTickLength]="maxYAxisTickLength"
+    [xAxisTickFormatting]="formatString" [yAxisTickFormatting]="formatNumber" [yAxisTicks]="yAxisTicks"
+    [showDataLabel]="showDataLabel" [barPadding]="barPadding" [tooltipDisabled]="tooltipDisabled"
+    [roundEdges]="roundEdges">
+</ngx-charts-bar-vertical> -->

@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container p-5">
+    <div class="row">
+        <br>
+        <h6 class="text-center">Pie chart</h6>
+        <ngx-charts-pie-chart [results]="productSales" [view]="view" [scheme]="colorScheme" [legend]="legend"
+            [legendTitle]="legendTitle" [legendPosition]="legendPosition" [animations]="animations"
+            [doughnut]="isDoughnut">
+        </ngx-charts-pie-chart>
+        <br>
+        <hr>
+        <br>
+        <h6 class="text-center">Pie grid chart</h6>
+        <br>
+        <ngx-charts-pie-grid [results]="productSales" [view]="view" [scheme]="colorScheme" [animations]="animations">
+        </ngx-charts-pie-grid>
+        <br>
+        <hr>
+        <h6 class="text-center">Advanced pie chart</h6>
+        <br>
+        <ngx-charts-advanced-pie-chart [results]="productSales" [view]="view" [scheme]="colorScheme"
+            [animations]="animations">
+        </ngx-charts-advanced-pie-chart>
+        <br>
+    </div>
+</div>
