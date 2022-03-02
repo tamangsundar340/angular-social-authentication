@@ -7,13 +7,15 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChartsComponent } from './components/charts/charts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
